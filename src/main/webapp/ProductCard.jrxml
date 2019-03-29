@@ -1,0 +1,1916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ProductCard" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="87dc2135-b27b-43b1-852a-8abddfd00934">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ProductCardXml"/>
+	<import value="static net.sf.jasperreports.expressions.functions.LogicalFunctions.*"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F8F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFBFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_TH" mode="Opaque" backcolor="#BBA8A8">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_CH" mode="Opaque" backcolor="#FFE6E6">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<queryString language="XPath">
+		<![CDATA[/com.pfgc.wsclient.productcardinfo.ProductCardResponse]]>
+	</queryString>
+	<field name="pfgItem" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgItem]]></fieldDescription>
+	</field>
+	<field name="pfgDescription1" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgDescription1]]></fieldDescription>
+	</field>
+	<field name="pfgDescription2" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgDescription2]]></fieldDescription>
+	</field>
+	<field name="pfgBrandKey" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgBrandKey]]></fieldDescription>
+	</field>
+	<field name="pfgBrandName" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgBrandName]]></fieldDescription>
+	</field>
+	<field name="pfgPack" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgPack]]></fieldDescription>
+	</field>
+	<field name="pfgSize" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgSize]]></fieldDescription>
+	</field>
+	<field name="pfgInternalUpc" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgInternalUpc]]></fieldDescription>
+	</field>
+	<field name="pfgMfgItemNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgMfgItemNumber]]></fieldDescription>
+	</field>
+	<field name="pfgSubCat" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgSubCat]]></fieldDescription>
+	</field>
+	<field name="pfgCat" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgCat]]></fieldDescription>
+	</field>
+	<field name="pfgLength" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgLength]]></fieldDescription>
+	</field>
+	<field name="pfgWidth" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgWidth]]></fieldDescription>
+	</field>
+	<field name="pfgHeight" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHeight]]></fieldDescription>
+	</field>
+	<field name="pfgSupplier1" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgSupplier1]]></fieldDescription>
+	</field>
+	<field name="pfgInvType" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgInvType]]></fieldDescription>
+	</field>
+	<field name="pfgGTIN" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgGTIN]]></fieldDescription>
+	</field>
+	<field name="pfgCOP" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgCOP]]></fieldDescription>
+	</field>
+	<field name="pfgRandomWtFlag" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgRandomWtFlag]]></fieldDescription>
+	</field>
+	<field name="pfgCatchWtFlag" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgCatchWtFlag]]></fieldDescription>
+	</field>
+	<field name="pfgShelflife" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgShelflife]]></fieldDescription>
+	</field>
+	<field name="pfgHazmat" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHazmat]]></fieldDescription>
+	</field>
+	<field name="pfgTempzone" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgTempzone]]></fieldDescription>
+	</field>
+	<field name="pfgNetWt" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgNetWt]]></fieldDescription>
+	</field>
+	<field name="pfgGrossWt" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgGrossWt]]></fieldDescription>
+	</field>
+	<field name="pfgIsActive" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgIsActive]]></fieldDescription>
+	</field>
+	<field name="pfgMktExtendedDescription" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgMktExtendedDescription]]></fieldDescription>
+	</field>
+	<field name="pfgUNNAIdentNum" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgUNNAIdentNum]]></fieldDescription>
+	</field>
+	<field name="pfgHazItemShippingName" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHazItemShippingName]]></fieldDescription>
+	</field>
+	<field name="pfgHazItemClass" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHazItemClass]]></fieldDescription>
+	</field>
+	<field name="pfgHazItemSubClass" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHazItemSubClass]]></fieldDescription>
+	</field>
+	<field name="pfgHazItemPackingGrp" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHazItemPackingGrp]]></fieldDescription>
+	</field>
+	<field name="pfgHazItemEmergencyPh" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHazItemEmergencyPh]]></fieldDescription>
+	</field>
+	<field name="pfgHazItemGeneralInf1" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHazItemGeneralInf1]]></fieldDescription>
+	</field>
+	<field name="pfgHazItemGeneralInf2" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHazItemGeneralInf2]]></fieldDescription>
+	</field>
+	<field name="pfgHazItemGeneralInf3" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHazItemGeneralInf3]]></fieldDescription>
+	</field>
+	<field name="pfgHazItemPrintOnInv" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHazItemPrintOnInv]]></fieldDescription>
+	</field>
+	<field name="pfgHazMaterialOrChem" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgHazMaterialOrChem]]></fieldDescription>
+	</field>
+	<field name="pfgLinkedToVendorItem" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgLinkedToVendorItem]]></fieldDescription>
+	</field>
+	<field name="vndGTIN" class="java.lang.String">
+		<fieldDescription><![CDATA[vndGTIN]]></fieldDescription>
+	</field>
+	<field name="vndProductCode" class="java.lang.String">
+		<fieldDescription><![CDATA[vndProductCode]]></fieldDescription>
+	</field>
+	<field name="vndProductShortName" class="java.lang.String">
+		<fieldDescription><![CDATA[vndProductShortName]]></fieldDescription>
+	</field>
+	<field name="vndProductStatus" class="java.lang.String">
+		<fieldDescription><![CDATA[vndProductStatus]]></fieldDescription>
+	</field>
+	<field name="vndManufacturerName" class="java.lang.String">
+		<fieldDescription><![CDATA[vndManufacturerName]]></fieldDescription>
+	</field>
+	<field name="vndBrandName" class="java.lang.String">
+		<fieldDescription><![CDATA[vndBrandName]]></fieldDescription>
+	</field>
+	<field name="vndBrandOwerName" class="java.lang.String">
+		<fieldDescription><![CDATA[vndBrandOwerName]]></fieldDescription>
+	</field>
+	<field name="vndUnitQuantity" class="java.lang.String">
+		<fieldDescription><![CDATA[vndUnitQuantity]]></fieldDescription>
+	</field>
+	<field name="vndUnitSizeNetCont" class="java.lang.String">
+		<fieldDescription><![CDATA[vndUnitSizeNetCont]]></fieldDescription>
+	</field>
+	<field name="vndUnitSizeUOM" class="java.lang.String">
+		<fieldDescription><![CDATA[vndUnitSizeUOM]]></fieldDescription>
+	</field>
+	<field name="vndGeneralDescription" class="java.lang.String">
+		<fieldDescription><![CDATA[vndGeneralDescription]]></fieldDescription>
+	</field>
+	<field name="vndProductProfile" class="java.lang.String">
+		<fieldDescription><![CDATA[vndProductProfile]]></fieldDescription>
+	</field>
+	<field name="vndPrductTypUnitDesc" class="java.lang.String">
+		<fieldDescription><![CDATA[vndPrductTypUnitDesc]]></fieldDescription>
+	</field>
+	<field name="vndMasterPack" class="java.lang.String">
+		<fieldDescription><![CDATA[vndMasterPack]]></fieldDescription>
+	</field>
+	<field name="vndChildGTIN" class="java.lang.String">
+		<fieldDescription><![CDATA[vndChildGTIN]]></fieldDescription>
+	</field>
+	<field name="vndGPCCode" class="java.lang.String">
+		<fieldDescription><![CDATA[vndGPCCode]]></fieldDescription>
+	</field>
+	<field name="vndGPCDescription" class="java.lang.String">
+		<fieldDescription><![CDATA[vndGPCDescription]]></fieldDescription>
+	</field>
+	<field name="vndGrossWeight" class="java.lang.String">
+		<fieldDescription><![CDATA[vndGrossWeight]]></fieldDescription>
+	</field>
+	<field name="vndHeight" class="java.lang.String">
+		<fieldDescription><![CDATA[vndHeight]]></fieldDescription>
+	</field>
+	<field name="vndLength" class="java.lang.String">
+		<fieldDescription><![CDATA[vndLength]]></fieldDescription>
+	</field>
+	<field name="vndWidth" class="java.lang.String">
+		<fieldDescription><![CDATA[vndWidth]]></fieldDescription>
+	</field>
+	<field name="vndCube" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCube]]></fieldDescription>
+	</field>
+	<field name="vndAvgServingPerCase" class="java.lang.String">
+		<fieldDescription><![CDATA[vndAvgServingPerCase]]></fieldDescription>
+	</field>
+	<field name="vndPalletGTINHigh" class="java.lang.String">
+		<fieldDescription><![CDATA[vndPalletGTINHigh]]></fieldDescription>
+	</field>
+	<field name="vndPalletGTINTie" class="java.lang.String">
+		<fieldDescription><![CDATA[vndPalletGTINTie]]></fieldDescription>
+	</field>
+	<field name="vndPalletHigh" class="java.lang.String">
+		<fieldDescription><![CDATA[vndPalletHigh]]></fieldDescription>
+	</field>
+	<field name="vndPalletTie" class="java.lang.String">
+		<fieldDescription><![CDATA[vndPalletTie]]></fieldDescription>
+	</field>
+	<field name="vndTotalPalletQuantit" class="java.lang.String">
+		<fieldDescription><![CDATA[vndTotalPalletQuantit]]></fieldDescription>
+	</field>
+	<field name="vndQtyOfChildrenCIN" class="java.lang.String">
+		<fieldDescription><![CDATA[vndQtyOfChildrenCIN]]></fieldDescription>
+	</field>
+	<field name="vndQtyOfNxtLvlItmCIR" class="java.lang.String">
+		<fieldDescription><![CDATA[vndQtyOfNxtLvlItmCIR]]></fieldDescription>
+	</field>
+	<field name="vndShelfLife" class="java.lang.String">
+		<fieldDescription><![CDATA[vndShelfLife]]></fieldDescription>
+	</field>
+	<field name="vndShelfLifeUOM" class="java.lang.String">
+		<fieldDescription><![CDATA[vndShelfLifeUOM]]></fieldDescription>
+	</field>
+	<field name="vndStorageTempFromF" class="java.lang.String">
+		<fieldDescription><![CDATA[vndStorageTempFromF]]></fieldDescription>
+	</field>
+	<field name="vndStorageTempTOF" class="java.lang.String">
+		<fieldDescription><![CDATA[vndStorageTempTOF]]></fieldDescription>
+	</field>
+	<field name="vndCountryOrgOfProd" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCountryOrgOfProd]]></fieldDescription>
+	</field>
+	<field name="vndCatchRandomWeight" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCatchRandomWeight]]></fieldDescription>
+	</field>
+	<field name="vndOrdrableVariableWt" class="java.lang.String">
+		<fieldDescription><![CDATA[vndOrdrableVariableWt]]></fieldDescription>
+	</field>
+	<field name="vndKosher" class="java.lang.String">
+		<fieldDescription><![CDATA[vndKosher]]></fieldDescription>
+	</field>
+	<field name="vndKosherType" class="java.lang.String">
+		<fieldDescription><![CDATA[vndKosherType]]></fieldDescription>
+	</field>
+	<field name="vndNonSoldReturnable" class="java.lang.String">
+		<fieldDescription><![CDATA[vndNonSoldReturnable]]></fieldDescription>
+	</field>
+	<field name="vndIsItAConsumerUnit" class="java.lang.String">
+		<fieldDescription><![CDATA[vndIsItAConsumerUnit]]></fieldDescription>
+	</field>
+	<field name="vndIsItADispatchUnit" class="java.lang.String">
+		<fieldDescription><![CDATA[vndIsItADispatchUnit]]></fieldDescription>
+	</field>
+	<field name="vndIsItAInvoiceUnit" class="java.lang.String">
+		<fieldDescription><![CDATA[vndIsItAInvoiceUnit]]></fieldDescription>
+	</field>
+	<field name="vndIsItABaseUnit" class="java.lang.String">
+		<fieldDescription><![CDATA[vndIsItABaseUnit]]></fieldDescription>
+	</field>
+	<field name="vndIsPackageReturnable" class="java.lang.String">
+		<fieldDescription><![CDATA[vndIsPackageReturnable]]></fieldDescription>
+	</field>
+	<field name="vndMarkingLotNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[vndMarkingLotNumber]]></fieldDescription>
+	</field>
+	<field name="vndTargetMarket" class="java.lang.String">
+		<fieldDescription><![CDATA[vndTargetMarket]]></fieldDescription>
+	</field>
+	<field name="vndStorageInstruction" class="java.lang.String">
+		<fieldDescription><![CDATA[vndStorageInstruction]]></fieldDescription>
+	</field>
+	<field name="vndTransFatStatus" class="java.lang.String">
+		<fieldDescription><![CDATA[vndTransFatStatus]]></fieldDescription>
+	</field>
+	<field name="vndFarmRaised" class="java.lang.String">
+		<fieldDescription><![CDATA[vndFarmRaised]]></fieldDescription>
+	</field>
+	<field name="vndFairTrade" class="java.lang.String">
+		<fieldDescription><![CDATA[vndFairTrade]]></fieldDescription>
+	</field>
+	<field name="vndFreeRange" class="java.lang.String">
+		<fieldDescription><![CDATA[vndFreeRange]]></fieldDescription>
+	</field>
+	<field name="vndOrganic" class="java.lang.String">
+		<fieldDescription><![CDATA[vndOrganic]]></fieldDescription>
+	</field>
+	<field name="vndWild" class="java.lang.String">
+		<fieldDescription><![CDATA[vndWild]]></fieldDescription>
+	</field>
+	<field name="vndSeasonalItem" class="java.lang.String">
+		<fieldDescription><![CDATA[vndSeasonalItem]]></fieldDescription>
+	</field>
+	<field name="vndGeneticallyModified" class="java.lang.String">
+		<fieldDescription><![CDATA[vndGeneticallyModified]]></fieldDescription>
+	</field>
+	<field name="vndHalal" class="java.lang.String">
+		<fieldDescription><![CDATA[vndHalal]]></fieldDescription>
+	</field>
+	<field name="vndMarkedAsRecyclable" class="java.lang.String">
+		<fieldDescription><![CDATA[vndMarkedAsRecyclable]]></fieldDescription>
+	</field>
+	<field name="vndVegan" class="java.lang.String">
+		<fieldDescription><![CDATA[vndVegan]]></fieldDescription>
+	</field>
+	<field name="vndBioDegradeable" class="java.lang.String">
+		<fieldDescription><![CDATA[vndBioDegradeable]]></fieldDescription>
+	</field>
+	<field name="vndClonedFoods" class="java.lang.String">
+		<fieldDescription><![CDATA[vndClonedFoods]]></fieldDescription>
+	</field>
+	<field name="vndProbiotic" class="java.lang.String">
+		<fieldDescription><![CDATA[vndProbiotic]]></fieldDescription>
+	</field>
+	<field name="vndHumanelyRaised" class="java.lang.String">
+		<fieldDescription><![CDATA[vndHumanelyRaised]]></fieldDescription>
+	</field>
+	<field name="vndLactoseFree" class="java.lang.String">
+		<fieldDescription><![CDATA[vndLactoseFree]]></fieldDescription>
+	</field>
+	<field name="vndMscCertified" class="java.lang.String">
+		<fieldDescription><![CDATA[vndMscCertified]]></fieldDescription>
+	</field>
+	<field name="vndNatural" class="java.lang.String">
+		<fieldDescription><![CDATA[vndNatural]]></fieldDescription>
+	</field>
+	<field name="vndShadeGrown" class="java.lang.String">
+		<fieldDescription><![CDATA[vndShadeGrown]]></fieldDescription>
+	</field>
+	<field name="vndSustainable" class="java.lang.String">
+		<fieldDescription><![CDATA[vndSustainable]]></fieldDescription>
+	</field>
+	<field name="vndUSDAGrade" class="java.lang.String">
+		<fieldDescription><![CDATA[vndUSDAGrade]]></fieldDescription>
+	</field>
+	<field name="vndCalculationSize" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCalculationSize]]></fieldDescription>
+	</field>
+	<field name="vndCalculationSizeUOM" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCalculationSizeUOM]]></fieldDescription>
+	</field>
+	<field name="vndSuggestdServingSize" class="java.lang.String">
+		<fieldDescription><![CDATA[vndSuggestdServingSize]]></fieldDescription>
+	</field>
+	<field name="vndCalciumPercentRDIUSA" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCalciumPercentRDIUSA]]></fieldDescription>
+	</field>
+	<field name="vndCalciumMg" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCalciumMg]]></fieldDescription>
+	</field>
+	<field name="vndCalories" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCalories]]></fieldDescription>
+	</field>
+	<field name="vndCaloriesFromFat" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCaloriesFromFat]]></fieldDescription>
+	</field>
+	<field name="vndCarbohydrates" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCarbohydrates]]></fieldDescription>
+	</field>
+	<field name="vndCarbohydratesPercentRDI" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCarbohydratesPercentRDI]]></fieldDescription>
+	</field>
+	<field name="vndCholesterolMg" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCholesterolMg]]></fieldDescription>
+	</field>
+	<field name="vndGlutenFree" class="java.lang.String">
+		<fieldDescription><![CDATA[vndGlutenFree]]></fieldDescription>
+	</field>
+	<field name="vndIronPercentRDIUSA" class="java.lang.String">
+		<fieldDescription><![CDATA[vndIronPercentRDIUSA]]></fieldDescription>
+	</field>
+	<field name="vndIronMg" class="java.lang.String">
+		<fieldDescription><![CDATA[vndIronMg]]></fieldDescription>
+	</field>
+	<field name="vndProtein" class="java.lang.String">
+		<fieldDescription><![CDATA[vndProtein]]></fieldDescription>
+	</field>
+	<field name="vndSaturatedFat" class="java.lang.String">
+		<fieldDescription><![CDATA[vndSaturatedFat]]></fieldDescription>
+	</field>
+	<field name="vndSaturatedFatPercenRDI" class="java.lang.String">
+		<fieldDescription><![CDATA[vndSaturatedFatPercenRDI]]></fieldDescription>
+	</field>
+	<field name="vndSodiumPercentRDIUSA" class="java.lang.String">
+		<fieldDescription><![CDATA[vndSodiumPercentRDIUSA]]></fieldDescription>
+	</field>
+	<field name="vndSodiumMg" class="java.lang.String">
+		<fieldDescription><![CDATA[vndSodiumMg]]></fieldDescription>
+	</field>
+	<field name="vndTotalDietaryFiber" class="java.lang.String">
+		<fieldDescription><![CDATA[vndTotalDietaryFiber]]></fieldDescription>
+	</field>
+	<field name="vndTotalDietFiberRDI" class="java.lang.String">
+		<fieldDescription><![CDATA[vndTotalDietFiberRDI]]></fieldDescription>
+	</field>
+	<field name="vndTotalFat" class="java.lang.String">
+		<fieldDescription><![CDATA[vndTotalFat]]></fieldDescription>
+	</field>
+	<field name="vndTotalFatPercentRDIUSA" class="java.lang.String">
+		<fieldDescription><![CDATA[vndTotalFatPercentRDIUSA]]></fieldDescription>
+	</field>
+	<field name="vndTotalSugar" class="java.lang.String">
+		<fieldDescription><![CDATA[vndTotalSugar]]></fieldDescription>
+	</field>
+	<field name="vndTransfattyAcids" class="java.lang.String">
+		<fieldDescription><![CDATA[vndTransfattyAcids]]></fieldDescription>
+	</field>
+	<field name="vndVitaminAIUPercentRDIUSA" class="java.lang.String">
+		<fieldDescription><![CDATA[vndVitaminAIUPercentRDIUSA]]></fieldDescription>
+	</field>
+	<field name="vndVitaminCPercentRDIUSA" class="java.lang.String">
+		<fieldDescription><![CDATA[vndVitaminCPercentRDIUSA]]></fieldDescription>
+	</field>
+	<field name="vndVitaminCMg" class="java.lang.String">
+		<fieldDescription><![CDATA[vndVitaminCMg]]></fieldDescription>
+	</field>
+	<field name="vndVitaminDPercentRDIUSA" class="java.lang.String">
+		<fieldDescription><![CDATA[vndVitaminDPercentRDIUSA]]></fieldDescription>
+	</field>
+	<field name="vndEggs" class="java.lang.String">
+		<fieldDescription><![CDATA[vndEggs]]></fieldDescription>
+	</field>
+	<field name="vndMilk" class="java.lang.String">
+		<fieldDescription><![CDATA[vndMilk]]></fieldDescription>
+	</field>
+	<field name="vndPeanuts" class="java.lang.String">
+		<fieldDescription><![CDATA[vndPeanuts]]></fieldDescription>
+	</field>
+	<field name="vndSoy" class="java.lang.String">
+		<fieldDescription><![CDATA[vndSoy]]></fieldDescription>
+	</field>
+	<field name="vndWheat" class="java.lang.String">
+		<fieldDescription><![CDATA[vndWheat]]></fieldDescription>
+	</field>
+	<field name="vndTreeNuts" class="java.lang.String">
+		<fieldDescription><![CDATA[vndTreeNuts]]></fieldDescription>
+	</field>
+	<field name="vndCrustacean" class="java.lang.String">
+		<fieldDescription><![CDATA[vndCrustacean]]></fieldDescription>
+	</field>
+	<field name="vndSesame" class="java.lang.String">
+		<fieldDescription><![CDATA[vndSesame]]></fieldDescription>
+	</field>
+	<field name="vndFish" class="java.lang.String">
+		<fieldDescription><![CDATA[vndFish]]></fieldDescription>
+	</field>
+	<field name="vndChildNutrition" class="java.lang.String">
+		<fieldDescription><![CDATA[vndChildNutrition]]></fieldDescription>
+	</field>
+	<field name="vndLinkedPFGItemNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[vndLinkedPFGItemNumber]]></fieldDescription>
+	</field>
+	<field name="vndPublishStatus" class="java.lang.String">
+		<fieldDescription><![CDATA[vndPublishStatus]]></fieldDescription>
+	</field>
+	<field name="vndMoreInfo" class="java.lang.String">
+		<fieldDescription><![CDATA[vndMoreInfo]]></fieldDescription>
+	</field>
+	<field name="vndPackageAndStorage" class="java.lang.String">
+		<fieldDescription><![CDATA[vndPackageAndStorage]]></fieldDescription>
+	</field>
+	<field name="vndPreparationAndCookingSuggestion" class="java.lang.String">
+		<fieldDescription><![CDATA[vndPreparationAndCookingSuggestion]]></fieldDescription>
+	</field>
+	<field name="vndIngredients" class="java.lang.String">
+		<fieldDescription><![CDATA[vndIngredients]]></fieldDescription>
+	</field>
+	<field name="vndServingSuggestion" class="java.lang.String">
+		<fieldDescription><![CDATA[vndServingSuggestion]]></fieldDescription>
+	</field>
+	<field name="pfgInvTypeCode" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgInvTypeCode]]></fieldDescription>
+	</field>
+	<field name="pfgSubCatNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgSubCatNumber]]></fieldDescription>
+	</field>
+	<field name="pfgCatNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgCatNumber]]></fieldDescription>
+	</field>
+	<field name="pfgBrandCode" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgBrandCode]]></fieldDescription>
+	</field>
+	<field name="pfgCtrlBrandNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgCtrlBrandNumber]]></fieldDescription>
+	</field>
+	<field name="pfgBrandRanking" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgBrandRanking]]></fieldDescription>
+	</field>
+	<field name="pfgSupplierNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgSupplierNumber]]></fieldDescription>
+	</field>
+	<field name="pfgVendorTiHi" class="java.lang.String">
+		<fieldDescription><![CDATA[pfgVendorTiHi]]></fieldDescription>
+	</field>
+	<field name="vndrBSTFree" class="java.lang.String">
+		<fieldDescription><![CDATA[vndrBSTFree]]></fieldDescription>
+	</field>
+	<field name="vndBenefits" class="java.lang.String">
+		<fieldDescription><![CDATA[vndBenefits]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="801" splitType="Stretch">
+			<frame>
+				<reportElement uuid="b051beba-9f47-4c7e-8995-ce968d320a80" x="0" y="1" width="555" height="799"/>
+				<box>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textField>
+					<reportElement uuid="9ba574cc-f66a-44a8-a0e9-6cf432f45f7f" mode="Transparent" x="142" y="11" width="270" height="19" forecolor="#CA0000"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="SansSerif" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgDescription1},null),"Invalid Pfg Item Number",$F{pfgDescription1})]]></textFieldExpression>
+				</textField>
+				<image>
+					<reportElement uuid="8843d5d1-3b75-4778-b1cb-a6a8981c3766" x="1" y="1" width="79" height="79"/>
+				</image>
+				<textField>
+					<reportElement uuid="947e73d4-5068-4b4b-a694-477134d61968" x="131" y="31" width="299" height="39"/>
+					<textElement textAlignment="Justified" verticalAlignment="Middle">
+						<font fontName="SansSerif" size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgMktExtendedDescription},null),"",$F{pfgMktExtendedDescription})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="4095c931-7f74-4038-b8be-6c6e95089fd0" x="11" y="91" width="68" height="19"/>
+					<textElement>
+						<font fontName="SansSerif" size="12"/>
+					</textElement>
+					<text><![CDATA[PFG Item #]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="1ab1d349-36c3-4884-b92f-a7ab3892a954" x="81" y="91" width="70" height="19"/>
+					<textElement>
+						<font fontName="SansSerif" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgItem},null),"",$F{pfgItem})]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement uuid="8a744fda-6e0d-4ca8-affa-70594d3eb52c" x="10" y="110" width="521" height="4" backcolor="#A7A7A7"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Double"/>
+					</graphicElement>
+				</rectangle>
+				<rectangle>
+					<reportElement uuid="54964135-1942-4a2a-aaf0-92324d577426" x="200" y="121" width="332" height="19" backcolor="#E10000"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Double" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="5b7aadc5-71c4-4589-abe3-e771f9ea4ff0" x="201" y="121" width="169" height="19" forecolor="#FFFFFF" backcolor="#FF0000"/>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[  Product Specifications:]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="d8cc35f2-1ac3-4b28-aea1-d0302be90bd4" x="200" y="151" width="332" height="39"/>
+					<graphicElement>
+						<pen lineWidth="1.5"/>
+					</graphicElement>
+				</rectangle>
+				<rectangle>
+					<reportElement uuid="0a33c4ed-5b10-4e90-b2ca-50f08c1ef21c" x="201" y="152" width="331" height="18" forecolor="#C0C0C0" backcolor="#C0C0C0"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Solid"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="3360b32e-a780-4bd4-9be5-ce01fe434109" x="201" y="153" width="80" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[MFG Product]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="0c7cdef0-6f66-4c85-8e89-07c0ae42b621" x="284" y="153" width="77" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[UPC]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="901a4342-6a4d-4724-90b4-87a3f19ef247" x="361" y="153" width="41" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Units/Case]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="912ee2cb-e76e-4cf3-914c-da2e0f766b41" x="403" y="153" width="68" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[UnitSize/Measure]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f03e77e2-cd6c-4c65-93d1-6677c1e4ad02" x="471" y="153" width="51" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Serving/Case]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="4ee7cee7-b933-4e6c-9552-26a9631c2540" x="201" y="171" width="80" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgMfgItemNumber},null),"",$F{pfgMfgItemNumber})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="e793caa3-e94c-407a-ace7-8e9a05bf6fee" x="284" y="171" width="77" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgGTIN},null),"",$F{pfgGTIN})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="0d2c5cff-8865-4c18-9156-4e4daa0fc98e" x="361" y="171" width="42" height="19"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgPack},null),"",$F{pfgPack})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="bdb1d1eb-6f30-419c-baac-6133eba0f0ea" x="403" y="171" width="68" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgSize},null),"",$F{pfgSize})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="919e050f-7c89-457a-bfb6-0c7e6448271b" x="471" y="171" width="51" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndAvgServingPerCase},null),"",$F{vndAvgServingPerCase})]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement uuid="1eb38135-1bf0-4076-98cc-dd3c5078b89e" x="201" y="211" width="332" height="39"/>
+					<graphicElement>
+						<pen lineWidth="1.5"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="db0849f3-5181-463f-8461-adb7ca70ea06" x="202" y="212" width="80" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[MFG Product]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="8ce6b188-f97a-4532-8c9d-29c97b5658a7" x="202" y="212" width="330" height="18" forecolor="#C0C0C0" backcolor="#C0C0C0"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Solid"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="7a388277-042e-4f7d-a5fd-5c2e14cd2b0c" x="285" y="213" width="117" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Class]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="3a681e4a-a0c5-45f7-a78d-7d02b6b0f8d2" x="203" y="213" width="80" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Brand]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="3673d6b0-dd36-4f4c-84d0-80ca415c3e98" x="404" y="211" width="128" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[PBH]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f5dd5b1e-d3a6-42dc-b297-dd2ceea44eb7" x="204" y="231" width="80" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgBrandName},null),"",$F{pfgBrandName})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="de3fdd2c-95a7-4dbe-98e8-c5fd91b87340" x="285" y="232" width="117" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgCat},null),"",$F{pfgCat})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="179fd6d6-2be3-4da4-9867-9c54da6c14a1" x="401" y="232" width="131" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgSubCat},null),"",$F{pfgSubCat})]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement uuid="48be868d-15e4-4983-b516-7cbb09abb44e" x="202" y="271" width="332" height="39"/>
+					<graphicElement>
+						<pen lineWidth="1.5"/>
+					</graphicElement>
+				</rectangle>
+				<rectangle>
+					<reportElement uuid="9d384a8b-5541-44ce-9d28-81f486f97877" x="204" y="272" width="328" height="18" forecolor="#C0C0C0" backcolor="#C0C0C0"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Solid"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="f65ec350-373a-4004-a02a-1b4a1c93d06b" x="202" y="274" width="58" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Gross Wt]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="bf076159-29ac-4f4b-ada2-4745a7b85de7" x="281" y="274" width="58" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Net Wt]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="008db4b7-38c8-4d60-86a3-dd56a56dcd2f" x="362" y="274" width="41" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Origin]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="e3bffe40-5c24-4283-ab0b-8419bcca291b" x="404" y="274" width="68" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Kosher]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="1f12f01b-3a97-4735-84b7-60f4f96cc221" x="471" y="272" width="51" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Child Nutrition]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="29eb14f7-2ffb-4356-8e88-4e562520f448" x="201" y="322" width="332" height="19" backcolor="#E10000"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Double" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="154294d0-1218-4e0b-b503-3ff9468d904e" x="205" y="321" width="169" height="19" forecolor="#FFFFFF" backcolor="#FF0000"/>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Shipping Information:]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="be05fc7e-021a-42c2-b842-d5e0f1fe14c0" x="201" y="351" width="332" height="39"/>
+					<graphicElement>
+						<pen lineWidth="1.5"/>
+					</graphicElement>
+				</rectangle>
+				<rectangle>
+					<reportElement uuid="fffa41eb-ed26-4481-adae-b3c51770c3c7" x="202" y="353" width="330" height="18" forecolor="#C0C0C0" backcolor="#C0C0C0"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Solid"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="72e70305-4db9-4a49-ad54-96c712a83c48" x="203" y="352" width="80" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[LenXWidthXHt]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="341de906-e0cf-4794-9ec7-17e77b123cb8" x="285" y="353" width="77" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[TiHi]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="9a035d79-25a6-43e8-9e9a-d3e0bb57e76e" x="363" y="353" width="41" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[ShelfLife]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="baa83c64-6a31-4edf-a6f6-67d62a5a4412" x="404" y="353" width="68" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[TempZone]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="ac8e9881-df84-4406-93d1-e5607f62cce4" x="473" y="354" width="51" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Wt Flag]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="b7aaeeb4-9ec2-4caa-9248-7780a5f5844d" x="204" y="370" width="80" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgLength},null),"",$F{pfgLength})+"X"+IF(EQUALS($F{pfgWidth},null),"",$F{pfgWidth})+"X"+IF(EQUALS($F{pfgHeight},null),"",$F{pfgHeight})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="38657a72-b4e9-4875-9aa9-41d2250ad368" x="286" y="371" width="77" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{pfgVendorTiHi}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="3e7a61b7-ed59-4197-8691-1c1324bc14a9" x="364" y="370" width="42" height="19"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgShelflife},null),"",$F{pfgShelflife})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="e888dbe2-dec2-47c9-8164-307460611aa6" x="407" y="372" width="68" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgTempzone},null),"",$F{pfgTempzone})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="cc74e808-ff51-404a-a998-3b94340b81e3" x="474" y="371" width="51" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgRandomWtFlag},null),"",$F{pfgRandomWtFlag})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="65179519-2692-4579-95a4-3a31ce36109c" x="205" y="290" width="65" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgGrossWt},null),"",$F{pfgGrossWt})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="8e5bf245-404a-4f6a-b493-d3add4a104f8" x="282" y="292" width="57" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgGTIN},null),"",$F{pfgGTIN})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="901397c2-1878-42a4-997e-54013e5c8219" x="363" y="290" width="42" height="19"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndCountryOrgOfProd},null),"",$F{vndCountryOrgOfProd})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="5d940153-6f3f-4959-9652-26e067ba1084" x="405" y="291" width="68" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndKosher},null),"",$F{vndKosher})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="d5f42c49-0098-4227-9f11-fb67b2a54580" x="475" y="290" width="51" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndChildNutrition},null),"",$F{vndChildNutrition})]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement uuid="820bf3f0-ca8c-4380-8ed0-9f963b6c862a" x="10" y="122" width="185" height="508"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="530665dc-4c9f-4643-a7c3-69ad08791377" x="16" y="133" width="89" height="17"/>
+					<textElement>
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[Nutrition Facts]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="47feda37-6fb1-475b-a6df-589e11a607fb" x="17" y="151" width="59" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Serving Size :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4671e856-6048-456e-9bc8-7e81db1ea9a0" x="17" y="165" width="88" height="17"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Serving Per Container :]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="31992a21-321b-4d01-bf8d-a54559d928b8" x="106" y="151" width="30" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndSuggestdServingSize},null),"",$F{vndSuggestdServingSize})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="25ecbc44-27b9-4055-bba4-8e79ec8ea588" x="106" y="165" width="30" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndAvgServingPerCase},null),"",$F{vndAvgServingPerCase})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="34d4ee0b-d342-4504-b73a-27caa68021e6" x="140" y="151" width="30" height="12"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndCalculationSizeUOM},null),"",$F{vndCalculationSizeUOM})]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement uuid="e6897094-99da-473a-a13f-e8f6feefc369" x="17" y="182" width="167" height="2" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineColor="#000000"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="b06fc9aa-04fa-4579-a42f-3e35ee8a7b44" x="18" y="191" width="87" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Amount Per Serving]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="ce38d9b5-879b-4154-910e-5726a7606ac2" x="19" y="204" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.25"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="f1c18c6a-c10e-41c3-9e10-34de5f482165" x="19" y="205" width="40" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Calories :]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="09146a71-8843-473f-832b-7f9a6dd781ff" x="60" y="206" width="30" height="12"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndCalories},null),"",$F{vndCalories})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="aee6b414-7299-470f-8c47-182174cb36c8" x="91" y="206" width="66" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Calories from Fat :]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="99c1c870-a51c-4ae3-b864-ba43228eea24" x="158" y="206" width="30" height="12"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndCaloriesFromFat},null),"",$F{vndCaloriesFromFat})]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement uuid="a4edf406-dbf4-44ed-9f6b-93c0ec6d38b6" x="19" y="219" width="167" height="2" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineColor="#000000"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="22af0381-8ade-4ab8-a30d-aaefba79ea7f" x="96" y="225" width="42" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Per Serving]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4bb4ac12-e545-4b90-ba5e-44ca230298fa" x="143" y="226" width="56" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[%Daily Value*]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="9e30ee88-5be7-4c2b-b4e5-a5ba30dd7af5" x="18" y="239" width="59" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Total Fat]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="9f3b2774-8a96-48a5-a666-b0c0204828a4" x="18" y="253" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="263d30e7-aa8f-415c-a3c6-68c9a7fd3e1c" x="23" y="255" width="59" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Saturated Fat]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="b6540849-27de-4beb-b3aa-9c1ce726efb5" x="18" y="268" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="81508cea-6bd2-47d0-b07f-6fa469f0470d" x="23" y="269" width="59" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Trans Fat]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="a19ecbcf-4730-4481-92d2-a24519bc40a0" x="18" y="283" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="945420a3-6f85-448f-be72-b55772144252" x="18" y="285" width="59" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Cholesterol]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="52b58be6-2e66-4450-84ff-80f2d219754f" x="18" y="298" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="73432621-7497-4418-94bf-0114909d074c" x="18" y="300" width="59" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Sodium]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="f3337914-3444-4648-bf12-389370c00fa7" x="18" y="314" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.2" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="09f7f0bb-f97f-478e-a616-64df3e3694d8" x="18" y="316" width="70" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Total Carbohydrate]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="70fd2324-445c-439f-8b2a-a51de72b8b45" x="18" y="329" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="f1933eaa-8e0f-4541-8006-3b6a1213d5c2" x="24" y="331" width="59" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Dietary Fiber]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="8c7cb40f-4df2-48c7-92dd-99fefad958e0" x="20" y="342" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="5b35a571-3b86-4e66-b909-0e1fd6d20fcc" x="25" y="343" width="59" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Sugars]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="1947c57a-6081-4071-af18-7be85eb43284" x="21" y="357" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="09853e53-250d-4839-8b40-f2d215010ea2" x="21" y="359" width="59" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Protein]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="e358d338-55da-416c-beef-73deb8be4437" x="97" y="240" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndTotalFat},null),"",$F{vndTotalFat})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="47717e85-2ef0-4105-9d5f-999dff78a221" x="152" y="241" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndTotalFat},null),"",$F{vndTotalFat})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="163e4487-71f3-48e0-89bd-d03f28fa7a8c" x="120" y="240" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[g]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="dc8fa03c-54f7-407d-b04e-9d9ab9f1ca3b" x="175" y="241" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[%]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="aad98e22-9a8e-400b-bfe2-be9b01f45978" x="97" y="256" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndSaturatedFat},null),"",$F{vndSaturatedFat})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="5403551f-75bf-470d-8674-cf8df6afd6c5" x="121" y="256" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[g]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="da465a37-c938-4b61-a142-4280efcea037" x="153" y="256" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndSaturatedFatPercenRDI},null),"",$F{vndSaturatedFatPercenRDI})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="64b340dd-47f2-4183-a7e1-64d166932bcc" x="176" y="256" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[%]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="9433e274-94b2-4781-aef9-744dc0551a2f" x="97" y="272" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndTransfattyAcids},null),"",$F{vndTransfattyAcids})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="7f54175d-0ea2-4bd4-b040-445089ce11d3" x="98" y="286" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndCholesterolMg},null),"",$F{vndCholesterolMg})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="2ede5f74-fd4f-4942-a5a7-2eced039c27f" x="121" y="286" width="17" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[mg]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="5a629af6-eb15-403e-8675-a00beb87b8e4" x="99" y="303" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndSodiumMg},null),"",$F{vndSodiumMg})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="231d3d93-5958-4bde-aac5-b425a3860049" x="122" y="301" width="17" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[mg]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="c9a16e38-0a76-4d0a-a20a-353f262afa99" x="154" y="302" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndSodiumPercentRDIUSA},null),"",$F{vndSodiumPercentRDIUSA})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="794ea1f0-b9b5-44d8-ac67-7353977035a6" x="177" y="302" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[%]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="87836558-fcd9-474e-93e4-a708ee662930" x="98" y="317" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndCarbohydrates},null),"",$F{vndCarbohydrates})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="1dd92e41-72c8-42da-ade0-798fe6a04ef5" x="122" y="317" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[g]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="8e1aeaf9-c8e2-4499-8cb2-7da146f110e3" x="154" y="318" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndCarbohydratesPercentRDI},null),"",$F{vndCarbohydratesPercentRDI})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="f03eacf0-3227-4847-b6d3-93ce7d47b8ee" x="178" y="318" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[%]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="1b975016-eb4c-4215-9d1c-c483cd282252" x="98" y="330" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndTotalDietaryFiber},null),"",$F{vndTotalDietaryFiber})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="1393bc52-9bb0-4679-b669-f48d270e60ba" x="122" y="331" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[g]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="f28292ff-ba2b-43ca-b5ab-6e4add993a93" x="155" y="332" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndTotalDietFiberRDI},null),"",$F{vndTotalDietFiberRDI})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="e20c78eb-6cdc-4059-94c7-231cacfe3d8f" x="179" y="331" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[%]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="1b975016-eb4c-4215-9d1c-c483cd282252" x="98" y="343" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndTotalSugar},null),"",$F{vndTotalSugar})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="1393bc52-9bb0-4679-b669-f48d270e60ba" x="122" y="343" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[g]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="1b975016-eb4c-4215-9d1c-c483cd282252" x="98" y="359" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndProtein},null),"",$F{vndProtein})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="1393bc52-9bb0-4679-b669-f48d270e60ba" x="122" y="359" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[g]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="c06e863e-e95b-4090-a5ad-dd68bf96ae83" x="21" y="372" width="167" height="2" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineColor="#000000"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="32602f38-95a0-43f2-bea3-67fbbf593e6f" x="66" y="377" width="42" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Per Srv]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="08d71471-2608-4b32-9fca-82fef8c5d33a" x="146" y="376" width="42" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Per Srv]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="5ff07418-76ce-4945-90fb-26a21780b1bc" x="22" y="394" width="37" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Vitamin A]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="2f03c0d5-6f18-4452-a72e-1d883fd16f8a" x="65" y="394" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndVitaminAIUPercentRDIUSA},null),"",$F{vndVitaminAIUPercentRDIUSA})]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement uuid="2d34f636-7464-4214-8b6c-725da864b47d" x="23" y="408" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="adda6843-855c-4a74-9685-5d2806835fd8" x="89" y="394" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[%]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="df101de2-2a9e-4a78-a373-87757cb762fa" x="109" y="394" width="37" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Vitamin C]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="ada968cd-fd26-4cd3-9584-e2e39ee0c492" x="153" y="394" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndVitaminCPercentRDIUSA},null),"",$F{vndVitaminCPercentRDIUSA})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="33430619-de2f-4a7c-a0b6-66bea95c2b9a" x="176" y="394" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[%]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="39696cb7-3595-4917-ab6b-75a1ebe2d6b8" x="23" y="410" width="37" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Calcium]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="d017a264-7c04-4ec2-9785-01fc84389b1d" x="23" y="424" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<textField>
+					<reportElement uuid="8eb4a984-13a7-4af0-8f17-21022d0d062b" x="65" y="411" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndCalciumPercentRDIUSA},null),"",$F{vndCalciumPercentRDIUSA})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="97b36f5b-9c62-4b72-ac74-21d1bf3db890" x="90" y="412" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[%]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="e998eb13-38d1-4a69-8c2e-0e2df5dfcf46" x="110" y="411" width="37" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Iron]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="4266eb28-e87f-4546-ad7e-e2fc9e9fb3de" x="153" y="412" width="22" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndIronPercentRDIUSA},null),"",$F{vndIronPercentRDIUSA})]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="24aa37b6-8bc3-46d3-a26a-45b6db0e3704" x="176" y="412" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[%]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2ba25422-9baf-4c93-9c54-19463646c08f" x="21" y="432" width="163" height="38"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[*Percent Daily Values are based on a 2000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="a9f2b3ba-128c-4a39-8b16-eb7239d5aab1" x="21" y="491" width="165" height="1" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="90925af0-0c40-49e8-8ae1-3893b8f86f2c" x="80" y="480" width="37" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Calories]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="3d1cac3a-5039-457a-a65a-433099a1d9a1" x="126" y="480" width="26" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[2,000]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="4c106d8c-02b9-4fd2-88d2-fd53188487b5" x="158" y="480" width="26" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[2,500]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="a69a3eab-58ad-4e9a-9787-72c3205f6eb6" x="23" y="493" width="37" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Total Fat]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="6ca49c8e-7e38-4f17-a7f4-203dc5b6e4fd" x="30" y="507" width="35" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Sat. Fat]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fdfad5d8-2a49-4d9a-8c29-3fab5ee445b6" x="23" y="521" width="43" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Cholesterol]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8ea58659-1821-4042-87bd-65a5a20a4762" x="23" y="535" width="41" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Sodium]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="bef41c7b-956b-4dd4-926b-adf9713a5f93" x="23" y="549" width="73" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Total Carbohydrate]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="aab27ce4-982c-4e9f-b81e-be4aeca1da2c" x="29" y="563" width="47" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Dietary Fiber]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="1887827f-ee4e-47c8-8b2d-0096591df87f" x="80" y="493" width="42" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Less Than]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="5fb7658a-de9e-4e34-acdd-d910a922e800" x="80" y="508" width="42" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Less Than]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="9a506b85-7e34-43b4-a85c-e9905253dacb" x="80" y="522" width="42" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Less Than]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f30642a7-6583-409f-9abb-ee2f57e712c5" x="80" y="536" width="42" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Less Than]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f3b9b264-6e40-4cfb-92e6-72ab0d1c28fc" x="126" y="494" width="25" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[65g]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="e4da2f0d-215a-420c-89e7-9a0b2c141adf" x="158" y="494" width="25" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[80g]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="3aeb9a1c-bdb5-4101-a162-12ae70b6080a" x="126" y="510" width="25" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[20g]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="be2876c5-456f-4efd-9a2f-3a0eb357dd79" x="158" y="511" width="25" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[25g]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="829b4508-1ef4-4881-a9a2-45288c6e3029" x="126" y="525" width="25" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[300g]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="da9fee38-8800-4d17-95f2-636250f4b2d0" x="158" y="526" width="25" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[300g]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="905ad2b4-4afd-4067-b82e-7ca4d41feb4d" x="126" y="537" width="29" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[2400mg]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="c208058c-b267-4890-b050-80a7aa0cac3b" x="158" y="538" width="29" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[2400mg]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fdeaa37f-1c0f-45ab-bda9-18a3b35db39f" x="126" y="550" width="29" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[300mg]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="1e71f8de-307a-4a4a-9b84-c90c27775e0c" x="158" y="551" width="29" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[375mg]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="309b9c46-9f77-477d-8b72-9e5a9289dddc" x="127" y="564" width="25" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[25g]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="35c575bc-1bdb-4320-a6bd-38a51f5acc7f" x="159" y="565" width="25" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[30g]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="4115cb95-8314-47b6-88d9-fca69023b8b3" x="22" y="579" width="165" height="2" forecolor="#000000" backcolor="#000000"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="360528b1-efa6-4c24-8ebd-8169f0515b5e" x="22" y="591" width="73" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Calories per gram]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="3fa5cc20-82fb-40cb-8908-27383c3c607e" x="23" y="605" width="38" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Fat 9]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="ff9e6469-2806-465c-88ae-43a83c63eb94" x="81" y="605" width="56" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Carbohydrate 4]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="0cdd888f-e24c-4de3-8f79-a3f95161b7b7" x="160" y="605" width="35" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Protein 4]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="2f184f00-3f00-4021-82ba-e37d6de2d7b6" x="203" y="400" width="332" height="19" backcolor="#E10000"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Double" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="baa41fe2-5abb-4e14-976c-a7aba307ca4b" x="206" y="400" width="169" height="19" forecolor="#FFFFFF" backcolor="#FF0000"/>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Ingredients:]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="056893cb-b743-42f2-b825-74d18723e64e" x="207" y="425" width="326" height="45"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndIngredients},null),"",$F{vndIngredients})]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement uuid="151b038f-2566-4f4e-b7eb-64fa507bda1a" x="205" y="476" width="332" height="19" backcolor="#E10000"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Double" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="c0b7aaf1-0614-49ce-b098-b5305ae92a03" x="207" y="476" width="169" height="19" forecolor="#FFFFFF" backcolor="#FF0000"/>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Allergens:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="b50f5889-49d1-4ff4-ace0-6de4a8d54681" x="213" y="499" width="59" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[Contains]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="78b6a98b-b64e-4274-a970-da06a3d0667b" x="381" y="499" width="59" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[May contains]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement uuid="0d39f5d4-d703-4c1a-96fe-613661c117b9" x="210" y="509" width="328" height="2" forecolor="#C0C0C0" backcolor="#C0C0C0"/>
+					<graphicElement>
+						<pen lineWidth="0.25" lineStyle="Solid" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<textField>
+					<reportElement uuid="3d99335d-57f0-4616-9116-6a5236018904" x="214" y="515" width="136" height="38"/>
+					<textElement verticalAlignment="Top">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(OR(EQUALS($F{vndMilk}, "C"),EQUALS($F{vndMilk},"CONTAINS")),"MILK","")+" "+
+IF(OR(EQUALS($F{vndEggs},"C"),EQUALS($F{vndEggs},"CONTAINS")),"Eggs","")+" "+
+IF(OR(EQUALS($F{vndPeanuts},"C"),EQUALS($F{vndPeanuts},"CONTAINS")),"Peanuts","")+" "+
+IF(OR(EQUALS($F{vndSoy},"C"),EQUALS($F{vndSoy},"CONTAINS")),"Soy","")+" "+
+IF(OR(EQUALS($F{vndWheat},"C"),EQUALS($F{vndWheat},"CONTAINS")),"Wheat","")+" "+
+IF(OR(EQUALS($F{vndTreeNuts},"C"),EQUALS($F{vndTreeNuts},"CONTAINS")),"TreeNuts","")+" "+
+IF(OR(EQUALS($F{vndCrustacean},"C"),EQUALS($F{vndCrustacean},"CONTAINS")),"Crustacean","")+" "+
+IF(OR(EQUALS($F{vndSesame},"C"),EQUALS($F{vndSesame},"CONTAINS")),"Sesame","")+" "+
+IF(OR(EQUALS($F{vndFish},"C"),EQUALS($F{vndFish},"CONTAINS")),"Fish","")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="2b73e112-5640-4626-8216-0eac79f39e9d" x="381" y="515" width="141" height="38"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(OR(EQUALS($F{vndMilk},"CM"),EQUALS($F{vndMilk},"MAY CONTAIN"),EQUALS($F{vndMilk},"May Contain")),"MILK","")+" "+
+IF(OR(EQUALS($F{vndEggs},"CM"),EQUALS($F{vndEggs},"MAY CONTAIN"),EQUALS($F{vndEggs},"May Contain")),"Eggs","")+" "+
+IF(OR(EQUALS($F{vndPeanuts},"CM"),EQUALS($F{vndPeanuts},"MAY CONTAIN"),EQUALS($F{vndPeanuts},"May Contain")),"Peanuts","")+" "+
+IF(OR(EQUALS($F{vndSoy},"CM"),EQUALS($F{vndSoy},"MAY CONTAIN"),EQUALS($F{vndSoy},"May Contain")),"Soy","")+" "+
+IF(OR(EQUALS($F{vndWheat},"CM"),EQUALS($F{vndWheat},"MAY CONTAIN"),EQUALS($F{vndWheat},"May Contain")),"Wheat","")+" "+
+IF(OR(EQUALS($F{vndTreeNuts},"CM"),EQUALS($F{vndTreeNuts},"MAY CONTAIN"),EQUALS($F{vndTreeNuts},"May Contain")),"TreeNuts","")+" "+
+IF(OR(EQUALS($F{vndCrustacean},"CM"),EQUALS($F{vndCrustacean},"MAY CONTAIN"),EQUALS($F{vndCrustacean},"May Contain")),"Crustacean","")+" "+
+IF(OR(EQUALS($F{vndSesame},"CM"),EQUALS($F{vndSesame},"MAY CONTAIN"),EQUALS($F{vndSesame},"May Contain")),"Sesame","")+" "+
+IF(OR(EQUALS($F{vndFish},"CM"),EQUALS($F{vndFish},"MAY CONTAIN"),EQUALS($F{vndFish},"MAY May Contain")),"Fish","")]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="37d0a388-a3e2-4c8e-8b34-1fa8571d28a5" x="212" y="562" width="169" height="19" forecolor="#FFFFFF" backcolor="#FF0000"/>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Ingredients:]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="31634c6a-c2d7-4bb8-8477-983b9a99903e" x="213" y="587" width="326" height="43"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{vndPackageAndStorage},null),"",$F{vndPackageAndStorage})]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement uuid="07705073-c721-444f-ac4f-61b99b24e41a" x="209" y="562" width="332" height="19" backcolor="#E10000"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Double" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="6589accd-a8e3-49d3-85b6-802faff3a0c7" x="210" y="563" width="169" height="19" forecolor="#FFFFFF" backcolor="#FF0000"/>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Handling Suggestions:]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="490d8707-5055-4377-bac2-524cdd474632" x="10" y="661" width="529" height="25"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{vndBenefits}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement uuid="bddc5abb-af46-4f02-84f6-6ddabb1c9532" x="9" y="641" width="530" height="14" backcolor="#E10000"/>
+					<graphicElement>
+						<pen lineWidth="0.0" lineStyle="Double" lineColor="#FFFFFF"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement uuid="e37f6e06-c4da-46d9-b528-4ce4e0461bae" x="10" y="642" width="169" height="18" forecolor="#FFFFFF" backcolor="#FF0000"/>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Benefits:]]></text>
+				</staticText>
+				<textField>
+					<reportElement uuid="2a1f8e16-8e0c-4dfe-ba00-70ddc4900751" x="455" y="91" width="77" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="9" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[IF(EQUALS($F{pfgIsActive},"Y"),"ActiveItem","InactiveItem" )]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="281a1892-4d29-40e5-81c8-2f563285b105" x="121" y="272" width="9" height="13"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[g]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
